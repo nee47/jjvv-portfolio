@@ -8,22 +8,22 @@ export default function Projects() {
         <ProjectCard
           title="Youtube Downloader (Desktop)"
           description="Sencillo descargador de videos de  youtube, realizado en python con pyside qml"
-          imgSrc="app1.jpg"
+          imgSrc="/app1.webp"
         />
         <ProjectCard
           title="Youtube Downloader (Web)"
           description="Descargador de youtube tipo y2mate, realizado con next js para el front y express para el backend"
-          imgSrc="app2.jpg"
+          imgSrc="/app2.webp"
         />
         <ProjectCard
           title="Youtube Downloader (Desktop)"
           description="Descargador de youtue tipo y2mate, realizado con next js para el front y express para el backend"
-          imgSrc="app1.jpg"
+          imgSrc="/app1.webp"
         />
         <ProjectCard
           title="Youtube Downloader (Desktop)"
           description="Descargador de youtue tipo y2mate, realizado con next js para el front y express para el backend"
-          imgSrc="app1.jpg"
+          imgSrc="/app1.webp"
         />
       </div>
       <div className="" id="projects-section">

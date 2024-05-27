@@ -6,7 +6,7 @@ export default function Home() {
       <div className="flex flex-col-reverse items-center md:flex-row mt-40">
         <div className="flex flex-col translate-x-7 md:translate-x-0 flex-wrap  items-center my-10 gap-y-4">
           <h1 className="text-5xl  max-w-[460px] break-words font-bold">
-            PROGRAMADOR FULL STACK
+            FULL STACK DEVELOPER
           </h1>
           <p className=" text-gray-500 max-w-sm -translate-x-9 ">
             Mi nombre es <span className="font-bold">Joseph Vilca</span>, soy

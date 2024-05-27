@@ -24,10 +24,20 @@ function MyNavigation() {
             </a>
           </li>
           <li>
-            <Link href="/">Habilidades</Link>
+            <a
+              className=" bg-slate-600 p-2 rounded-md border border-slate-400"
+              href="#projects-section"
+            >
+              Experiencia
+            </a>
           </li>
           <li>
-            <Link href="/">Educación</Link>
+            <a
+              className=" bg-slate-600 p-2 rounded-md border border-slate-400"
+              href="#projects-section"
+            >
+              Educacion
+            </a>
           </li>
         </ul>
       </nav>
