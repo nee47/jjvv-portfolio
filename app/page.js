@@ -1,21 +1,24 @@
 import Projects from "./components/Projects";
+import Image from "next/image";
+import About from "./components/About";
+import joseph from "@/public/pic.jpeg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen  bg-slate-200 flex-col items-center  pt-10 gap-y-16">
-      <div className="flex flex-col-reverse items-center md:flex-row mt-40">
-        <div className="flex flex-col translate-x-7 md:translate-x-0 flex-wrap  items-center my-10 gap-y-4">
-          <h1 className="text-5xl  max-w-[460px] break-words font-bold">
+    <main className="flex min-h-screen  bg-slate-200 flex-col items-center  md:pt-10 gap-y-6 border">
+      <div className="flex flex-col-reverse items-center md:flex-row mt-6 md:mt-40">
+        <div className="flex flex-col flex-wrap my-10 gap-y-4  mx-[10%] md:mx-0 ">
+          <h1 className="text-5xl max-w-[460px] break-words font-bold">
             FULL STACK DEVELOPER
           </h1>
-          <p className=" text-gray-500 max-w-sm -translate-x-9 ">
+          <p className=" roboto text-gray-500  md:max-w-sm ">
             Mi nombre es <span className="font-bold">Joseph Vilca</span>, soy
             desarrollador full stack residiendo en{" "}
             <span className="text-blue-700">Buenos Aires, Argentina</span> .
             Diseño y desarrollo soluciones para todo tipo de industria.
           </p>
 
-          <div className="flex gap-x-3 -translate-x-[200px] ">
+          <div className="flex gap-x-3 ">
             <a
               target="_blank"
               href="https://github.com/nee47"
@@ -48,20 +51,17 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <img
-            className=" w-64  rounded-full border-2 border-black"
-            src="pic.jpeg"
+          <Image
+            className=" w-64  rounded-full shadow-sm  "
+            src={joseph}
             alt="Joseph Vilca"
+            priority
           />
         </div>
       </div>
 
-      <p className=" max-w-sm md:px-4">
-        Me apasionan las nuevas tecnologias, los servicios cloud y aprender algo
-        nuevo.
-      </p>
-
       <Projects />
+      <About />
     </main>
   );
 }

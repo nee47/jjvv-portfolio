@@ -5,3 +5,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.roboto {
+  font-family: var(--font-roboto_mono);
+}
+
+.ubuntu {
+  font-family: var(--font-ubuntu);
+}

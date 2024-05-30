@@ -2,14 +2,16 @@ import { Roboto_Mono, Ubuntu } from "next/font/google";
 import Navigation from "./components/MyNavigation";
 import "./globals.css";
 
-const robot_mono = Roboto_Mono({
+const roboto_mono = Roboto_Mono({
   weight: "400",
   subsets: ["latin"],
+  variable: "--font-roboto_mono",
 });
 
 const ubuntu = Ubuntu({
   weight: "400",
   subsets: ["latin"],
+  variable: "--font-ubuntu",
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>
+      <body className={`${roboto_mono.variable} ${ubuntu.variable} ubuntu`}>
         <Navigation />
         {children}
       </body>
