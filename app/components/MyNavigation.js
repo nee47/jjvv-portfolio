@@ -12,7 +12,6 @@ function MyNavigation() {
     { label: "Proyectos", path: "#proyectos" },
     { label: "Acerca de mi", path: "#acerca" },
     { label: "Experiencia", path: "#experiencia" },
-    { label: "Educacion", path: "#educacion" },
     { label: "Contacto", path: "#contacto" },
   ];
 

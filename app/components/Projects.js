@@ -3,6 +3,7 @@ import Python from "./icons/Python";
 import Tailwind from "./icons/Tailwind";
 import NodeJs from "./icons/NodeJs";
 import Nicon from "./icons/Nicon";
+import QT from "./icons/QT";
 
 export default function Projects() {
   const TAGS = {
@@ -39,6 +40,11 @@ export default function Projects() {
       },
       classe: "bg-green-500 text-white ",
     },
+    pyside: {
+      name: "pyside6",
+      logo: QT,
+      classe: " bg-slate-200 ",
+    },
   };
 
   const PROJECTS = [
@@ -58,7 +64,7 @@ export default function Projects() {
         description:
           "Pagina web para la empresa Lubricantes especiales del Perú, presentacion simple de la empresa, catalogo estático y simple de la emprsa. Realizado con nextjs de forma estática.",
         img: "/app1.webp",
-        projectGitHub: "https://github.com/nee47/lubesac",
+        projectGitHub: "https://github.com/nee47/lubsacweb",
         projectDemo:
           "https://master--lubricantesespecialesdelperu.netlify.app/",
       },
@@ -70,11 +76,9 @@ export default function Projects() {
         description:
           "Descargador de youtube simple para deskptop, realizado con python y pyside6 con qml para la interfaz gráfica.",
         img: "/app1.webp",
-        projectGitHub: "https://github.com/nee47/lubesac",
-        projectDemo:
-          "https://master--lubricantesespecialesdelperu.netlify.app/",
+        projectGitHub: "https://github.com/nee47/ytdownloader",
       },
-      tags: [TAGS.python, TAGS.qml],
+      tags: [TAGS.python, TAGS.pyside, TAGS.qml],
     },
   ];
 
