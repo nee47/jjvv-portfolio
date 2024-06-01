@@ -6,6 +6,7 @@ export default function Python(props) {
       viewBox="0 0 54 54"
       width="25px"
       height="25px"
+      {...props}
     >
       <path
         fill="url(#a)"
