@@ -52,7 +52,7 @@ export default function Projects() {
       info: {
         title: "YT downloader web",
         description:
-          "Descargador de youtube tipo y2mate, realizado con next js para el front y express para el backend",
+          "Descargador de youtube tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp",
         img: "/app1.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader-web",
       },
@@ -62,7 +62,7 @@ export default function Projects() {
       info: {
         title: "Lubesac",
         description:
-          "Pagina web para la empresa Lubricantes especiales del Perú, presentacion simple de la empresa, catalogo estático y simple de la emprsa. Realizado con nextjs de forma estática.",
+          "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
         img: "/app1.webp",
         projectGitHub: "https://github.com/nee47/lubsacweb",
         projectDemo:
@@ -74,7 +74,7 @@ export default function Projects() {
       info: {
         title: "YT downloader Desktop",
         description:
-          "Descargador de youtube simple para deskptop, realizado con python y pyside6 con qml para la interfaz gráfica.",
+          "Descargador de youtube simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp.",
         img: "/app1.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader",
       },

@@ -1,15 +1,12 @@
-import Python from "./icons/Python";
-import ReactCon from "./icons/ReactCon";
-import HtmlIcon from "./icons/HtmlIcon";
-import NodeJs from "./icons/NodeJs";
-import Nicon from "./icons/Nicon";
-import QT from "./icons/QT";
-import CssIcon from "./icons/CssIcon";
-import Tailwind from "./icons/Tailwind";
+import Image from "next/image";
+import uba from "@/public/UBA.png";
+import Languages from "./Languages";
+import Frameworks from "./Frameworks";
+import DBS from "./DBS";
 
 export default function About() {
   return (
-    <div id="acerca" className=" py-10 px-[15%]">
+    <div id="acerca" className=" py-12 px-[5%] md:px-[15%]">
       <h1 className="text-3xl font-bold ">Sobre mí</h1>
       <p className="mt-2">
         Mi nombre es James Joseph Vilca Vargas, soy desarrollador full stack. Mi
@@ -20,102 +17,47 @@ export default function About() {
         Me dedico a dar soluciones de todo tipo en el mundo de la programación.
       </p>
 
-      <section className="my-6">
+      <section className="my-16">
         <article>
           <h1 className="text-3xl ">Mis conocimientos</h1>
-          <div></div>
-          <div className=" relative bg-black  rounded-md text-white max-w-[550px] my-6 p-4 roboto">
-            <h2 className="text-2xl  text-green-400 ">
-              Lenguajes de programación
-            </h2>
-            <ul className="mt-4">
-              {["Python", "JavaScript", "Java", "C#", "C"].map(
-                (item, index) => (
-                  <li key={index} className=" group hover:bg-purple-600">
-                    <span className="text-green-400 group-hover:text-transparent">
-                      ~$
-                    </span>{" "}
-                    {item}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          <div className="bg-stone-700  rounded-md roboto text-white max-w-[550px] my-6 p-4 ">
-            <h2 className="text-2xl  ">Base de datos</h2>
-
-            <ul className="mt-4 py-4 ">
-              {["SQL", "MongoDB", "FirebaseDB"].map((item, index) => (
-                <li
-                  key={index}
-                  className="hover:bg-green-600  border border-stone-300 pl-2"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="bg-slate-600  rounded-md roboto text-white max-w-[550px] my-6 p-4 ">
-            <h2 className="text-2xl ">Frameworks y más tecnologias</h2>
-
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-2 ">
-              {[
-                {
-                  label: "React",
-                  icon: ReactCon,
-                },
-                {
-                  label: "Html",
-                  icon: HtmlIcon,
-                },
-                {
-                  label: "CSS",
-                  icon: CssIcon,
-                },
-                {
-                  label: "Next js",
-                  icon: Nicon,
-                },
-                {
-                  label: "Tailwind CSS",
-                  icon: Tailwind,
-                },
-                {
-                  label: "Pyside",
-                  icon: QT,
-                },
-                {
-                  label: "Express JS",
-                  icon: NodeJs,
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="relative text-center rounded-md h-20 bg-slate-800 min-w-[140px]  group p-4 "
-                >
-                  <div className="md:invisible text-sm  group-hover:visible absolute z-40 -top-4 rounded-md left-10 bg-white  w-20 h-10 text-black">
-                    {item.label}
-                  </div>
-                  <item.icon className="m-auto " width="55px" height="55px" />
-                </div>
-              ))}
+          <div className="flex flex-wrap gap-4 mt-6 ">
+            <div>
+              <Languages />
+              <DBS />
             </div>
+            <Frameworks />
           </div>
         </article>
       </section>
 
-      <section className="my-6">
+      <section className="my-24">
         <h1 className="text-3xl">Idiomas</h1>
-        <ul>
-          <li>Español nativo</li>
-          <li>Ingles avanzado</li>
-        </ul>
+        <p className="my-4">Español nativo</p>
+        <p>Inglés avanzado</p>
       </section>
 
-      <section>
-        <h1>Educacion</h1>
+      <section className="my-24">
+        <h1 className=" text-3xl">Educación</h1>
+        <div className="flex gap-x-2 mt-10 items-center">
+          <Image
+            src={uba}
+            alt="Universidad de Buenos Aires"
+            className=" h-36  w-auto"
+          />
+          <div className="flex flex-col">
+            <div className="font-bold text-7xl">.UBA</div>
+            <div className="text-xl w-[180px] break-words leading-5 pl-4">
+              Universidad de Buenos Aires
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4">
+          <h2 className="text-3xl bg-gray-900 rounded-sm w-fit text-white p-4 ">
+            Ingeniería en Informática
+          </h2>
+          <p className="text-gray-700">Fecha de inicio: 2014</p>
+        </div>
       </section>
     </div>
   );

@@ -14,13 +14,13 @@ export default function ProjectCard({ info, tags }) {
         />
 
         <div className=" md:min-w-[580px] max-w-[580px]  flex-grow  p-6  ">
-          <h3 className="font-bold">{info.title}</h3>
+          <h3 className="font-bold text-2xl text-purple-700">{info.title}</h3>
           <p className="text-sm pt-2 text-slate-600">{info.description}</p>
           <div className="pt-6 flex text-xs gap-x-6">
             <a
               href={info.projectGitHub}
               target="_blank"
-              className="group outline outline-2 outline-black p-2 rounded-sm  md:hover:outline-purple-500 transition-[outline] ease-in "
+              className="group outline outline-2 outline-black p-2 rounded-sm  md:hover:outline-purple-500 md:hover:text-purple-700 transition-[outline] ease-in "
             >
               Ver en GitHub
               <span> →</span>
