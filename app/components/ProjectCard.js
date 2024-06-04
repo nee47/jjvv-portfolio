@@ -29,9 +29,9 @@ export default function ProjectCard({ info, tags }) {
               <a
                 href={info.projectDemo}
                 target="_blank"
-                className="p-2 hover:outline  hover:outline-sky-500 transition-[outline] ease-in rounded-sm"
+                className="p-2 hover:outline hover:outline-2  hover:outline-purple-600 transition-[outline] ease-in rounded-sm"
               >
-                Probar Online
+                Ver Demo
               </a>
             )}
           </div>

@@ -55,6 +55,7 @@ export default function Projects() {
           "Descargador de youtube tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp",
         img: "/app1.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader-web",
+        projectDemo: "https://streamable.com/umoapp",
       },
       tags: [TAGS.nextjs, TAGS.express, TAGS.tailwind],
     },
@@ -63,7 +64,7 @@ export default function Projects() {
         title: "Lubesac",
         description:
           "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
-        img: "/app1.webp",
+        img: "/app3.webp",
         projectGitHub: "https://github.com/nee47/lubsacweb",
         projectDemo:
           "https://master--lubricantesespecialesdelperu.netlify.app/",
@@ -75,8 +76,9 @@ export default function Projects() {
         title: "YT downloader Desktop",
         description:
           "Descargador de youtube simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp.",
-        img: "/app1.webp",
+        img: "/app2.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader",
+        projectDemo: "https://streamable.com/kr4xgy",
       },
       tags: [TAGS.python, TAGS.pyside, TAGS.qml],
     },
