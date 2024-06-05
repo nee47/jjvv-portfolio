@@ -1,5 +1,8 @@
 import { Roboto_Mono, Ubuntu } from "next/font/google";
 import Navigation from "./components/MyNavigation";
+
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 
 const roboto_mono = Roboto_Mono({
@@ -19,12 +22,20 @@ export const metadata = {
   description: "Portfolio",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const locale = await getLocale();
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${roboto_mono.variable} ${ubuntu.variable} ubuntu`}>
-        <Navigation />
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          <Navigation />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function MyNavigation() {
   const [clicked, setClicked] = useState(false);
@@ -14,6 +15,8 @@ function MyNavigation() {
     { label: "Experiencia", path: "#experiencia" },
     { label: "Contacto", path: "#contacto" },
   ];
+
+  const t = useTranslations("Index");
 
   return (
     <header>
@@ -34,7 +37,7 @@ function MyNavigation() {
                 href={tab.path}
                 className="p-2 text-sm   rounded-md md:border-2 md:border-purple-700 text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200"
               >
-                {tab.label}
+                {t("title")}
               </a>
             </li>
           ))}
