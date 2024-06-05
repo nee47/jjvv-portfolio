@@ -4,9 +4,9 @@ import Pill from "./Pill";
 export default function ProjectCard({ info, tags }) {
   return (
     <article>
-      <header className=" flex flex-wrap  gap-x-10 items-center justify-center mb-8  md:mb-36 ">
+      <header className="mb-8 flex flex-wrap  gap-x-10 items-center justify-center md:mb-36 ">
         <Image
-          className="rounded-t-lg flex-shrink-[2] w-[580px]   px-6  "
+          className="rounded-md flex-shrink-[2] w-[580px]"
           src={info.img}
           alt="aplicacion desarrollada por joseph vilca"
           width={700}

@@ -28,6 +28,41 @@ export default function About() {
             <Frameworks />
           </div>
         </article>
+
+        <div className="my-12">
+          <h2 className="text-2xl ">Conceptos</h2>
+          <ul className="mt-2 grid grid-cols-1 w-fit md:grid-cols-2">
+            <li className="max-w-[370px]">Modelo MVC</li>
+            <li className="max-w-[370px]">Modelo MVP</li>
+            <li className="max-w-[370px]">TDD</li>
+            <li className="max-w-[370px]">Unit testing</li>
+            <li className="max-w-[370px]">Infraestructura</li>
+            <li className="max-w-[370px]">Arquitectura de software</li>
+            <li className="max-w-[370px]">Patrones de diseño</li>
+            <li>Serverless</li>
+            <li className="max-w-[370px]">Programación orientada a objetos</li>
+            <li className="max-w-[370px]">Integración contínua (Travis-CI)</li>
+            <li className="max-w-[370px]">Git y Github</li>
+            <li className="max-w-[370px]">
+              Conocimiento básico del funcionamiento de los principales
+              servicios de AWS
+            </li>
+          </ul>
+        </div>
+
+        <div className="my-12">
+          <h2 className="text-2xl ">Tecnologías que deseo aprender</h2>
+          <ul className="mt-2 grid grid-cols-1 w-fit md:grid-cols-2">
+            <li className="max-w-[370px]">Docker</li>
+            <li className="max-w-[370px]">Kubernetes</li>
+            <li className="max-w-[370px]">React Native</li>
+            <li className="max-w-[370px]">Aws cognito</li>
+            <li className="max-w-[370px]">Aws DynamoDB</li>
+            <li className="max-w-[370px]">Aws DocumentDB</li>
+            <li className="max-w-[370px]">CloudFlare</li>
+            <li className="max-w-[370px]">Aws Cloudfront</li>
+          </ul>
+        </div>
       </section>
 
       <section className="my-24">

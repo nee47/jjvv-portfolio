@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div id="contacto" className="  py-12 px-[5%] md:px-[15%]">
+    <div id="contacto" className="py-24 px-[5%] md:px-[15%]">
       <div className="outline outline-2 outline-black p-4 rounded-sm hover:bg-lime-100">
         <h1 className="text-3xl max-w-md">
           Si deseas contratarme para desarrollar algún proyecto en mente, estoy
