@@ -1,28 +1,25 @@
+import { useTranslations } from "next-intl";
+
 export default function Experience() {
+  const t = useTranslations("Index");
   return (
     <div
-      id="experiencia"
+      id={t("nav3.path").slice(1)}
       className=" bg-gray-400 py-12 px-[5%] md:px-[15%] w-full"
     >
-      <h1 className="text-3xl font-bold ">Experiencia</h1>
+      <h1 className="text-3xl font-bold ">{t("exp.title")}</h1>
 
       {[
         {
-          title: "Autónomo",
-          date: " Desde 2017 hasta actualmente",
-          desc: [
-            "He dado soporte IT y he implementado distintos tipos de scripts en python y aplicaciones web para negocios como kioscos y pequeños comercios.",
-            "Atiendo emergencias y doy mantenimiento de hardware periodicamente también.",
-          ],
+          title: t("exp.e1.title"),
+          date: t("exp.e1.date"),
+          desc: [t("exp.e1.desc1"), t("exp.e1.desc2")],
         },
         ,
         {
-          title: "Revendedor de Hardware independiente",
-          date: " Desde 2020 hasta 2022",
-          desc: [
-            "Me encargaba de promocionar, cotizar y vender hardware a consumidor final",
-            "Aprendí mucho de ensamblaje de pcs, dectar fallos en el hardware, instalación de sistemas operativos, backups y recuperación de datos.",
-          ],
+          title: t("exp.e2.title"),
+          date: t("exp.e2.date"),
+          desc: [t("exp.e2.desc1"), t("exp.e2.desc2")],
         },
       ].map((item, index) => (
         <div

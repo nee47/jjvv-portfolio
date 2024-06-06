@@ -5,11 +5,13 @@ import Nicon from "./icons/Nicon";
 import QT from "./icons/QT";
 import CssIcon from "./icons/CssIcon";
 import Tailwind from "./icons/Tailwind";
+import { useTranslations } from "next-intl";
 
 export default function Frameworks() {
+  const t = useTranslations("Index");
   return (
     <div className="bg-slate-600  rounded-md roboto text-white max-w-[550px]  p-4 ">
-      <h2 className="text-2xl ">Frameworks y más tecnologias</h2>
+      <h2 className="text-2xl ">{t("skills.frameworks")}</h2>
 
       <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-2 ">
         {[

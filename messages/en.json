@@ -1,5 +1,102 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "nav1": {
+      "label": "Projects",
+      "path": "#projects"
+    },
+    "nav2": {
+      "label": "About",
+      "path": "#about"
+    },
+    "nav3": {
+      "label": "Experience",
+      "path": "#experience"
+    },
+    "nav4": {
+      "label": "Contact",
+      "path": "#contact"
+    },
+
+    "heroDesc": "My name is <important >Joseph Vilca</important>, I am a full stack developer based in <important2>Buenos Aires, Argentina</important2>. I design and develop solutions for all types of industries.",
+    "pro": "Some of my Projects",
+    "externals": {
+      "git": "See on GitHub",
+      "demo": "Try demo"
+    },
+    "project1": "Y2mate type video downloader, made with next js for the frontend and express for the backend. It uses the executable of the yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
+    "project2": "Website for the company Lubricantes Especiales Del Perú, it has company presentation, static catalog of products and it's also optimized for mobiles. Made with nextjs in static way.",
+    "project3": "Simple video downloader app for desktop. It was made with python along with pyside6 with QML for the UI. It uses yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
+
+    "about": {
+      "title": "About me",
+      "desc1": "My name is James Joseph Vilca Vargas, I am a full stack developer. My passion for technology started in high school. I am currently 29 years old.",
+      "desc2": "I would like to be part of a development team in a company to test all my knowledge..",
+      "desc3": "My goal is to properly give solutions to my clients in a professional way "
+    },
+
+    "skills": {
+      "title": "My skills",
+      "pl": "Programming Languages",
+      "frameworks": "Frameworks and more technologies",
+      "db": "Data bases"
+    },
+
+    "concepts": {
+      "title": "Concepts",
+      "c1": "MVC pattern",
+      "c2": "MVP pattern",
+      "c3": "TDD",
+      "c4": "Unit Testing",
+      "c5": "Infrastructure",
+      "c6": "Software architecture",
+      "c7": "Design patterns",
+      "c8": "Serverless",
+      "c9": "Object-oriented programming",
+      "c10": "Contiunous integration (Travis-CI)",
+      "c11": "Git and GitHub",
+      "c12": "Basic knowledge of the  main AWS services"
+    },
+
+    "toLearn": {
+      "title": "Technologies i want to learn next",
+      "t1": "Docker",
+      "t2": "Kubernetes",
+      "t3": "React Native",
+      "t4": "Aws Cognito",
+      "t5": "Aws DynamoDB",
+      "t6": "Aws DocumentDB",
+      "t7": "CloudFlare",
+      "t8": "Aws CloudFront"
+    },
+
+    "langs": {
+      "title": "Languages",
+      "l1": "Native Spanish",
+      "l2": "Advanced English"
+    },
+
+    "education": {
+      "title": "Education",
+      "e1": "Software Engineer",
+      "date": "Starting date:2014"
+    },
+
+    "exp": {
+      "title": "Experiencia",
+      "e1": {
+        "title": "Freelancer",
+        "date": "Since 2017 until now",
+        "desc1": "I have provided IT support and implemented different types of python scripts and web applications for businesses such as kiosks, small stores and on fiverr.",
+        "desc2": "I attend emergencies and provide hardware maintenance periodically as well."
+      },
+      "e2": {
+        "title": "Independent Hardware Reseller",
+        "date": "Since 2020 until 2022",
+        "desc1": "I was in charge of promoting, quoting and selling hardware to end users.",
+        "desc2": "I learned a lot about PC assembly, hardware troubleshooting, operating system installation, backups and data recovery."
+      }
+    },
+
+    "contact": "If you need someone to make your project come true, contact me and hire me ."
   }
 }

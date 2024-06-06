@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Pill from "./Pill";
+import { useTranslations } from "next-intl";
 
 export default function ProjectCard({ info, tags }) {
+  const t = useTranslations("Index");
   return (
     <article>
       <header className="mb-8 flex flex-wrap  gap-x-10 items-center justify-center md:mb-36 ">
@@ -22,7 +24,7 @@ export default function ProjectCard({ info, tags }) {
               target="_blank"
               className="group outline outline-2 outline-black p-2 rounded-sm  md:hover:outline-purple-500 md:hover:text-purple-700 transition-[outline] ease-in "
             >
-              Ver en GitHub
+              {t("externals.git")}
               <span> →</span>
             </a>
             {info.projectDemo && (
@@ -31,7 +33,7 @@ export default function ProjectCard({ info, tags }) {
                 target="_blank"
                 className="p-2 hover:outline hover:outline-2  hover:outline-purple-600 transition-[outline] ease-in rounded-sm"
               >
-                Ver Demo
+                {t("externals.demo")}
               </a>
             )}
           </div>

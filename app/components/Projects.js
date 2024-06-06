@@ -4,8 +4,10 @@ import Tailwind from "./icons/Tailwind";
 import NodeJs from "./icons/NodeJs";
 import Nicon from "./icons/Nicon";
 import QT from "./icons/QT";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+  const t = useTranslations("Index");
   const TAGS = {
     python: {
       name: "python",
@@ -51,8 +53,7 @@ export default function Projects() {
     {
       info: {
         title: "YT downloader web",
-        description:
-          "Descargador de youtube tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp",
+        description: t("project1"),
         img: "/app1.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader-web",
         projectDemo: "https://streamable.com/umoapp",
@@ -62,8 +63,7 @@ export default function Projects() {
     {
       info: {
         title: "Lubesac",
-        description:
-          "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
+        description: t("project2"),
         img: "/app3.webp",
         projectGitHub: "https://github.com/nee47/lubsacweb",
         projectDemo:
@@ -74,8 +74,7 @@ export default function Projects() {
     {
       info: {
         title: "YT downloader Desktop",
-        description:
-          "Descargador de youtube simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp.",
+        description: t("project3"),
         img: "/app2.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader",
         projectDemo: "https://streamable.com/kr4xgy",
@@ -86,10 +85,10 @@ export default function Projects() {
 
   return (
     <section
-      id="proyectos"
       className="flex flex-col w-full items-center bg-slate-50 justify-center pt-20  "
+      id={t("nav1.path").slice(1)}
     >
-      <h2 className="text-black text-3xl font-bold  ">Proyectos destacados</h2>
+      <h2 className="text-black text-3xl font-bold  ">{t("pro")}</h2>
       <div className="mt-20">
         {PROJECTS.map((p, index) => (
           <ProjectCard key={index} info={p.info} tags={p.tags} />

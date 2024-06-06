@@ -1,5 +1,102 @@
 {
   "Index": {
-    "title": "Holamundo"
+    "nav1": {
+      "label": "Proyectos",
+      "path": "#proyectos"
+    },
+    "nav2": {
+      "label": "Acerca de mí",
+      "path": "#acerca"
+    },
+    "nav3": {
+      "label": "Experiencia",
+      "path": "#experiencia"
+    },
+    "nav4": {
+      "label": "Contacto",
+      "path": "#contacto"
+    },
+
+    "heroDesc": "Mi nombre es <important >Joseph Vilca</important>, soy desarrollador full stack residiendo en <important2>Buenos Aires, Argentina</important2> .Diseño y desarrollo soluciones para todo tipo de industria.",
+    "pro": "Proyectos destacados",
+    "externals": {
+      "git": "Ver en GitHub",
+      "demo": "Ver demo"
+    },
+    "project1": "Descargador de videos tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
+    "project2": "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
+    "project3": "Descargador de videos simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
+
+    "about": {
+      "title": "Sobre mí",
+      "desc1": "Mi nombre es James Joseph Vilca Vargas, soy desarrollador full stack. Mi pasión por la tecnologia empezó en la secundaria. Actualmente tengo 29 años.",
+      "desc2": "Tengo deseos de pertenecer a un equipo de desarrollo en alguna compañia para poner a prueba todos mis conocimientos.",
+      "desc3": "Me dedico a dar soluciones de todo tipo en el mundo de la programación."
+    },
+
+    "skills": {
+      "title": "Mis conocimientos",
+      "pl": "Lenguajes de programación",
+      "frameworks": "frameworks y más tecnologías",
+      "db": "Bases de datos"
+    },
+
+    "concepts": {
+      "title": "Conceptos",
+      "c1": "Patrón MVC",
+      "c2": "Patrón MVP",
+      "c3": "TDD",
+      "c4": "Pruebas Unitarias",
+      "c5": "Infraestructura",
+      "c6": "Arquitectura de software",
+      "c7": "Patrones de diseño",
+      "c8": "Serverless",
+      "c9": "Programación orientada a objetos",
+      "c10": "Integración continua (Travis-CI)",
+      "c11": "Git y GitHub",
+      "c12": "Conocimiento básico del funcionamiento de los principales servicios de AWS"
+    },
+
+    "toLearn": {
+      "title": "Tecnologías que deseo aprender",
+      "t1": "Docker",
+      "t2": "Kubernetes",
+      "t3": "React Native",
+      "t4": "Aws Cognito",
+      "t5": "Aws DynamoDB",
+      "t6": "Aws DocumentDB",
+      "t7": "CloudFlare",
+      "t8": "Aws CloudFront"
+    },
+
+    "langs": {
+      "title": "Idiomas",
+      "l1": "Español nativo",
+      "l2": "Inglés avanzado"
+    },
+
+    "education": {
+      "title": "Educación",
+      "e1": "Ingeniería en Informática",
+      "date": "Fecha de inicio:2014"
+    },
+
+    "exp": {
+      "title": "Experiencia",
+      "e1": {
+        "title": "Autonómo",
+        "date": "Desde 2017 hasta actualemnte",
+        "desc1": "He dado soporte IT y he implementado distintos tipos de scripts en python y aplicaciones web para negocios como kioscos, pequeños comercios y en fiverr.",
+        "desc2": "Atiendo emergencias y doy mantenimiento de hardware periodicamente también."
+      },
+      "e2": {
+        "title": "Revendedor de Hardware Independiente",
+        "date": "Desde 2020 hasta 2022",
+        "desc1": "Me encargaba de promocionar, cotizar y vender hardware a final.",
+        "desc2": "Aprendí mucho de ensamblaje de pcs, dectar fallos en el hardware, instalación de sistemas operativos, backups y recuperación de datos."
+      }
+    },
+
+    "contact": "Si deseas contratarme para desarrollar algún proyecto en mente, estoy disponible."
   }
 }

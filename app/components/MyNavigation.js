@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
+import Link from "next/link";
 
 function MyNavigation() {
   const [clicked, setClicked] = useState(false);
@@ -9,14 +11,9 @@ function MyNavigation() {
     setClicked(!clicked);
   };
 
-  const tabs = [
-    { label: "Proyectos", path: "#proyectos" },
-    { label: "Acerca de mi", path: "#acerca" },
-    { label: "Experiencia", path: "#experiencia" },
-    { label: "Contacto", path: "#contacto" },
-  ];
-
   const t = useTranslations("Index");
+
+  const tabs = ["nav1", "nav2", "nav3", "nav4"];
 
   return (
     <header>
@@ -33,16 +30,33 @@ function MyNavigation() {
         >
           {tabs.map((tab, index) => (
             <li key={index}>
-              <a
-                href={tab.path}
-                className="p-2 text-sm   rounded-md md:border-2 md:border-purple-700 text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200"
-              >
-                {t("title")}
+              <a href={t(`${tab}.path`)}>
+                <div className="p-2 md:py-1 text-sm  w-[100px]  rounded-md md:border-2 md:border-purple-700 text-center text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200">
+                  {t(`${tab}.label`)}
+                </div>
               </a>
             </li>
           ))}
         </ul>
       </nav>
+
+      <div className="bg-slate-200 ">
+        <div className="flex justify-start gap-1 p-10">
+          <Link
+            href="/en"
+            className=" px-2  bg-purple-300 text-purple-800 rounded-sm hover:bg-purple-400"
+          >
+            EN
+          </Link>
+
+          <Link
+            href="/es"
+            className=" px-2  bg-purple-300 text-purple-800   rounded-sm hover:bg-purple-400"
+          >
+            ES
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
