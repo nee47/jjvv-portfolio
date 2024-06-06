@@ -51,7 +51,7 @@ export default function About() {
         </div>
 
         <div className="my-12">
-          <h2 className="text-2xl ">Tecnologías que deseo aprender</h2>
+          <h2 className="text-2xl ">{t("toLearn.title")}</h2>
           <ul className="mt-2 grid grid-cols-1 w-fit gap-x-6 md:grid-cols-2">
             {["t1", "t2", "t3", "t4", "t5", "t6", "t7"].map((item) => (
               <li key={item} className="max-w-[370px]">
