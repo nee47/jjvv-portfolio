@@ -15,7 +15,7 @@ export default function Home({ params: { locale } }) {
 
   return (
     <main className="flex min-h-screen  bg-slate-200 flex-col items-center  md:pt-10  border">
-      <div className="flex flex-col-reverse items-center md:flex-row mt-6 md:mt-40">
+      <div className="flex flex-col-reverse items-center md:flex-row mt-6 md:mt-24">
         <div className="flex flex-col flex-wrap my-10 gap-y-4  mx-[10%] md:mx-0 ">
           <h1 className="text-5xl max-w-[460px] break-words font-bold">
             FULL STACK DEVELOPER
