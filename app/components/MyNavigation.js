@@ -31,7 +31,7 @@ function MyNavigation() {
           {tabs.map((tab, index) => (
             <li key={index}>
               <a href={t(`${tab}.path`)}>
-                <div className="p-2 md:py-1 text-sm  w-[100px]  rounded-md md:border-2 md:border-purple-700 text-center text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200">
+                <div className="p-2 md:py-1 text-sm  w-[120px]  rounded-md md:border-2 md:border-purple-700 text-center text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200">
                   {t(`${tab}.label`)}
                 </div>
               </a>
