@@ -26,7 +26,7 @@ export default function Home({ params: { locale } }) {
                 <span className="font-bold text-black">{chunks}</span>
               ),
               important2: (chunks) => (
-                <span className="text-blue-700">{chunks}</span>
+                <span className="text-red-500 font-bold">{chunks}</span>
               ),
             })}
           </p>
