@@ -1,7 +1,7 @@
 import Projects from "@/app/components/Projects";
 import Image from "next/image";
 import About from "@/app/components/About";
-import joseph from "@/public/pic.jpeg";
+import joseph from "@/public/pp.png";
 import Experience from "@/app/components/Experience";
 import Contact from "@/app/components/Contact";
 import { useTranslations } from "next-intl";
@@ -63,14 +63,11 @@ export default function Home({ params: { locale } }) {
             </a>
           </div>
         </div>
-        <div className="flex items-center">
-          <Image
-            className=" w-64  rounded-full shadow-sm  "
-            src={joseph}
-            alt="Joseph Vilca"
-            priority
-          />
-        </div>
+        <Image
+          className=" w-[250px] h-[250px] rounded-full object-cover outline outline-4 outline-white"
+          src={joseph}
+          alt="Joseph Vilca"
+        />
       </div>
 
       <Projects />

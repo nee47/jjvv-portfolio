@@ -26,6 +26,7 @@
     "project1": "Descargador de videos tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
     "project2": "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
     "project3": "Descargador de videos simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
+    "projectDominaria": "Página web dedicada al House Framing, desarrollada con Next.js y Tailwind CSS para una experiencia rápida, moderna y completamente responsive. Se ejecuta dentro de un contenedor Docker, lo que garantiza facilidad de despliegue y escalabilidad.",
 
     "about": {
       "title": "Sobre mí",

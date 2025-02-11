@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 
 function MyNavigation() {
@@ -24,14 +23,14 @@ function MyNavigation() {
 
         <ul
           className={`  ${
-            clicked ? " right-0" : "-right-[100%]"
+            clicked ? " right-8" : "-right-[100%]"
           }  transition-[right] z-40 ease-in duration-300 w-[50%] fixed md:static 
-           mt-8 md:visible md:w-auto ml-auto bg-white md:bg-transparent flex   flex-col md:flex-row md:mt-0 py-2 text-white justify-center  gap-x-2 gap-y-6 md:gap-y-0 rounded-md `}
+           mt-8 md:visible md:w-auto ml-auto bg-white md:bg-transparent flex flex-col md:flex-row md:mt-0 py-2 text-white justify-center  gap-x-2 gap-y-6 md:gap-y-0 rounded-md `}
         >
           {tabs.map((tab, index) => (
             <li key={index}>
               <a href={t(`${tab}.path`)}>
-                <div className="p-2 md:py-1 text-sm  w-[100px]  rounded-md md:border-2 md:border-purple-700 text-center text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200">
+                <div className="p-2 ml-4 md:py-1 text-sm  w-[100px]  rounded-md md:border-2 md:border-purple-700 text-center text-black md:text-purple-700 hover:bg-purple-700 hover:text-slate-200">
                   {t(`${tab}.label`)}
                 </div>
               </a>

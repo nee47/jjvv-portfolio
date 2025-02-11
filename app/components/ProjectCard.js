@@ -6,9 +6,9 @@ export default function ProjectCard({ info, tags }) {
   const t = useTranslations("Index");
   return (
     <article>
-      <header className="mb-8 flex flex-wrap  gap-x-10 items-center justify-center md:mb-36 ">
+      <header className="mb-8 flex flex-wrap  gap-x-10 items-center justify-center md:mb-36">
         <Image
-          className="rounded-md flex-shrink-[2] w-[580px]"
+          className="rounded-md flex-shrink-[2] w-[580px] hover:scale-105 transform transition-transform duration-300"
           src={info.img}
           alt="aplicacion desarrollada por joseph vilca"
           width={700}

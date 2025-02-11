@@ -14,11 +14,11 @@ export default function Contact() {
           <div>joseph_vv@hotmail.com</div>
         </div>
 
-        <div className="flex gap-x-4 mt-4">
+        {/* <div className="flex gap-x-4 mt-4">
           <div>Phone:</div>
           <div className="bg-sky-200">+54 1132409601</div>
           <div className="bg-red-200">+1 6474039604</div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex gap-x-2 mt-4">

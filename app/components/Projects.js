@@ -52,6 +52,15 @@ export default function Projects() {
   const PROJECTS = [
     {
       info: {
+        title: "Dominaria General Contractors",
+        description: t("projectDominaria"),
+        img: "/dominariaca.jpg",
+        projectDemo: "https://dominaria.ca",
+      },
+      tags: [TAGS.nextjs, TAGS.tailwind],
+    },
+    {
+      info: {
         title: "YT downloader web",
         description: t("project1"),
         img: "/app1.webp",

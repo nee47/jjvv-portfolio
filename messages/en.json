@@ -26,6 +26,7 @@
     "project1": "Y2mate type video downloader, made with next js for the frontend and express for the backend. It uses the executable of the yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
     "project2": "Website for the company Lubricantes Especiales Del Perú, it has company presentation, static catalog of products and it's also optimized for mobiles. Made with nextjs in static way.",
     "project3": "Simple video downloader app for desktop. It was made with python along with pyside6 with QML for the UI. It uses yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
+    "projectDominaria": "This project is a website dedicated to House Framing, built with Next.js and Tailwind CSS for a fast, modern, and fully responsive experience. It runs inside a Docker container, ensuring easy deployment and scalability.",
 
     "about": {
       "title": "About me",
