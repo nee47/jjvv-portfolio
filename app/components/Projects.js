@@ -80,15 +80,15 @@ export default function Projects() {
       },
       tags: [TAGS.nextjs, TAGS.tailwind, TAGS.js],
     },
-    {
+    ,{
       info: {
-        title: "YT downloader Desktop",
-        description: t("project3"),
-        img: "/app2.webp",
-        projectGitHub: "https://github.com/nee47/ytdownloader",
-        projectDemo: "https://streamable.com/kr4xgy",
+        title: "Pertu Experiences",
+        description: t("projectPertu"),
+        img: "/pertu-opt.jpg",
+        
+        projectDemo: "https://pertu-experiences.netlify.app/",
       },
-      tags: [TAGS.python, TAGS.pyside, TAGS.qml],
+      tags: [TAGS.nextjs, TAGS.tailwind, TAGS.js],
     },
   ];
 
