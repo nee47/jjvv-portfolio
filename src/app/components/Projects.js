@@ -61,31 +61,31 @@ export default function Projects() {
     },
     {
       info: {
-        title: "YT downloader web",
-        description: t("project1"),
-        img: "/app1.webp",
+        title: "Devmotec",
+        description: t("projectDevmotec"),
+        img: "/devmotec.webp",
         projectGitHub: "https://github.com/nee47/ytdownloader-web",
-        projectDemo: "https://streamable.com/umoapp",
+        projectDemo: "https://devmotec.com",
       },
-      tags: [TAGS.nextjs, TAGS.express, TAGS.tailwind],
+      tags: [TAGS.nextjs, TAGS.tailwind],
     },
     {
       info: {
         title: "Lubesac",
         description: t("project2"),
-        img: "/app3.webp",
+        img: "/lubesac.webp",
         projectGitHub: "https://github.com/nee47/lubsacweb",
-        projectDemo:
-          "https://master--lubricantesespecialesdelperu.netlify.app/",
+        projectDemo: "https://lubricantesespecialesdelperu.com",
       },
       tags: [TAGS.nextjs, TAGS.tailwind, TAGS.js],
     },
-    ,{
+    ,
+    {
       info: {
         title: "Pertu Experiences",
         description: t("projectPertu"),
-        img: "/pertu-opt.jpg",
-        
+        img: "/pertu.webp",
+
         projectDemo: "https://pertu-experiences.netlify.app/",
       },
       tags: [TAGS.nextjs, TAGS.tailwind, TAGS.js],
@@ -94,10 +94,10 @@ export default function Projects() {
 
   return (
     <section
-      className="flex flex-col w-full items-center bg-slate-50 justify-center pt-20  "
+      className=" flex flex-col w-full items-center justify-center pt-44  "
       id={t("nav1.path").slice(1)}
     >
-      <h2 className="text-black text-3xl font-bold  ">{t("pro")}</h2>
+      <h2 className="text-black text-5xl font-bold">{t("pro")}</h2>
       <div className="mt-20">
         {PROJECTS.map((p, index) => (
           <ProjectCard key={index} info={p.info} tags={p.tags} />

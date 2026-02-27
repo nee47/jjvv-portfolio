@@ -1,5 +1,5 @@
 import Image from "next/image";
-import uba from "@/public/UBA.png";
+import uba from "@/public/uba-logo.webp";
 import Languages from "./Languages";
 import Frameworks from "./Frameworks";
 import DBS from "./DBS";
@@ -8,16 +8,26 @@ import { useTranslations } from "next-intl";
 export default function About() {
   const t = useTranslations("Index");
   return (
-    <div id={t("nav2.path").slice(1)} className=" py-12 px-[5%] md:px-[15%]">
-      <h1 className="text-3xl font-bold ">{t("about.title")}</h1>
-      <p className="mt-2">{t("about.desc1")}</p>
-      <p className="mt-2">{t("about.desc2")}</p>
-      <p className="mt-2"> {t("about.desc3")}</p>
+    <div id={t("nav2.path").slice(1)} className="py-12 px-[5%] md:px-[15%]">
+      <div className="py-20">
+        <h2 className="text-3xl font-bold ">{t("about.title")}</h2>
+        <p className="mt-8">
+          {t.rich("about.desc1", {
+            important3: (chunks) => (
+              <span className="font-bold text-black bg-zinc-300 px-2 ">
+                {chunks}
+              </span>
+            ),
+          })}
+        </p>
+        <p className="mt-2">{t("about.desc2")}</p>
+        <p className="mt-2"> {t("about.desc3")}</p>
+      </div>
 
-      <section className="my-16">
+      <section className="my-12">
         <article>
-          <h1 className="text-3xl ">{t("skills.title")}</h1>
-          <div className="flex flex-wrap gap-4 mt-6 ">
+          <h2 className="text-3xl font-bold">{t("skills.title")}</h2>
+          <div className="flex flex-wrap gap-4 mt-8 ">
             <div>
               <Languages />
               <DBS />
@@ -26,9 +36,9 @@ export default function About() {
           </div>
         </article>
 
-        <div className="my-12">
-          <h2 className="text-2xl ">{t("concepts.title")}</h2>
-          <ul className="mt-2 grid grid-cols-1 w-fit md:grid-cols-2">
+        <div className="my-20 bg-yellow-300 py-12 rounded-md ">
+          <h2 className="ml-20 text-3xl font-bold">{t("concepts.title")}</h2>
+          <ul className="mt-8 grid grid-cols-1 md:grid-cols-2 ml-24  gap-y-3">
             {[
               "c1",
               "c2",
@@ -43,19 +53,11 @@ export default function About() {
               "c11",
               "c12",
             ].map((c) => (
-              <li key={c} className="max-w-[370px]">
-                {t(`concepts.${c}`)}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="my-12">
-          <h2 className="text-2xl ">{t("toLearn.title")}</h2>
-          <ul className="mt-2 grid grid-cols-1 w-fit gap-x-6 md:grid-cols-2">
-            {["t1", "t2", "t3", "t4", "t5", "t6", "t7"].map((item) => (
-              <li key={item} className="max-w-[370px]">
-                {t(`toLearn.${item}`)}
+              <li
+                key={c}
+                className="max-w-[370px] flex rounded-md hover:font-bold"
+              >
+                <span className="mr-1">☢ </span> {t(`concepts.${c}`)}
               </li>
             ))}
           </ul>
@@ -63,13 +65,13 @@ export default function About() {
       </section>
 
       <section className="my-24">
-        <h1 className="text-3xl">{t("langs.title")}</h1>
-        <p className="my-4">{t("langs.l1")}</p>
+        <h2 className="text-3xl font-bold">{t("langs.title")}</h2>
+        <p className="mt-8">{t("langs.l1")}</p>
         <p>{t("langs.l2")}</p>
       </section>
 
       <section className="my-24">
-        <h1 className=" text-3xl">{t("education.title")}</h1>
+        <h2 className=" text-3xl font-bold">{t("education.title")}</h2>
         <div className="flex gap-x-2 mt-10 items-center">
           <Image
             src={uba}

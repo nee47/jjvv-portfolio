@@ -17,24 +17,24 @@
       "path": "#contacto"
     },
 
-    "heroDesc": "Mi nombre es <important >Joseph Vilca</important>, soy desarrollador full stack de  <important2>Perú</important2>. Diseño y desarrollo soluciones para todo tipo de industria.",
+    "heroDesc": "Mi nombre es <important >James Vilca</important>, soy desarrollador full stack de  <important2>Perú</important2>. Diseño y desarrollo soluciones para todo tipo de industria.",
     "pro": "Proyectos destacados",
     "externals": {
       "git": "Ver en GitHub",
       "demo": "Visitar"
     },
-    "project1": "Descargador de videos tipo y2mate, realizado con next js para el front y express para el backend. Utiliza el ejecutable del modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
+    "projectDevmotec": "Devmotec es una empresa especializada en el diseño y desarrollo de páginas web modernas, rápidas y optimizadas para convertir visitantes en clientes. Ofrece soluciones digitales a medida para impulsar el crecimiento y la presencia online de cada negocio.",
     "project2": "Página web para la empresa Lubricantes especiales del Perú, presentación de la empresa, catálogo estático de los productos y optimizado para mobiles. Realizado con nextjs de forma estática.",
     "project3": "Descargador de videos simple para deskptop, realizado con python, pyside6 con qml para la interfaz gráfica y el modulo yt-dlp. Eliges una calidad, y la aplicación descargará el video, si la calidad no se encuentra, descargará la mejor calidad no superior a la especificada.",
     "projectDominaria": "Página web dedicada al House Framing, desarrollada con Next.js y Tailwind CSS para una experiencia rápida, moderna y completamente responsive. Se ejecuta dentro de un contenedor Docker, lo que garantiza facilidad de despliegue y escalabilidad.",
 
-    "projectPertu":"Pagina web simple para empresas de turismo. Focalizando el mercado extranjero ",
+    "projectPertu": "Pagina web simple para empresas de turismo. Focalizando el mercado extranjero ",
 
     "about": {
       "title": "Sobre mí",
-      "desc1": "Mi nombre es James Joseph Vilca Vargas, soy desarrollador full stack. Mi pasión por la tecnologia empezó en la secundaria. Actualmente tengo 29 años.",
-      "desc2": "Tengo deseos de pertenecer a un equipo de desarrollo en alguna compañia para poner a prueba todos mis conocimientos.",
-      "desc3": "Me dedico a dar soluciones de todo tipo en el mundo de la programación."
+      "desc1": "Soy <important3>James Vilca</important3> un Desarrollador Full Stack con una sólida pasión por la tecnología que comenzó desde la etapa escolar. Cuento con experiencia en desarrollo web moderno, enfocándome en crear soluciones digitales eficientes, escalables y centradas en el usuario.",
+      "desc2": "Busco formar parte de un equipo de desarrollo profesional donde pueda aportar mis conocimientos, seguir creciendo y participar en proyectos de alto impacto.",
+      "desc3": "Mi objetivo es brindar soluciones de alta calidad que generen valor real para los clientes, trabajando con profesionalismo, precisión y mejora continua."
     },
 
     "skills": {

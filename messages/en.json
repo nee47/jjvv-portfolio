@@ -17,23 +17,23 @@
       "path": "#contact"
     },
 
-    "heroDesc": "My name is <important >Joseph Vilca</important>, I am a full stack developer from <important2>Perú</important2>. I design and develop solutions for all types of industries.",
+    "heroDesc": "My name is <important >James Vilca</important>, I am a full stack developer from <important2>Perú</important2>. I design and develop solutions for all types of industries.",
     "pro": "Some of my Projects",
     "externals": {
       "git": "GitHub",
       "demo": "Visit"
     },
-    "project1": "Y2mate type video downloader, made with next js for the frontend and express for the backend. It uses the executable of the yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
+    "projectDevmotec": "Devmotec is a company specialized in the design and development of modern, high-performance websites optimized to turn visitors into customers. It delivers tailored digital solutions that strengthen business growth and online presence.",
     "project2": "Website for the company Lubricantes Especiales Del Perú, it has company presentation, static catalog of products and it's also optimized for mobiles. Made with nextjs in static way.",
     "project3": "Simple video downloader app for desktop. It was made with python along with pyside6 with QML for the UI. It uses yt-dlp module. You choose a quality and the app will download a video with the quality specified or the best one that it can get not greater than the specified one.",
     "projectDominaria": "This project is a website dedicated to House Framing, built with Next.js and Tailwind CSS for a fast, modern, and fully responsive experience. It runs inside a Docker container, ensuring easy deployment and scalability.",
-    "projectPertu":"Landing page for tourism companies, focusing on the international market.",
+    "projectPertu": "Landing page for tourism companies, focusing on the international market.",
 
     "about": {
       "title": "About me",
-      "desc1": "My name is James Joseph Vilca Vargas, I am a full stack developer. My passion for technology started in high school. I am currently 29 years old.",
-      "desc2": "I would like to be part of a development team in a company to test all my knowledge..",
-      "desc3": "My goal is to properly give solutions to my clients in a professional way "
+      "desc1": "I'm <important3>James Vilca</important3>, a Full Stack Developer with a strong passion for technology that began during high school years. With solid experience in modern web development, i focus on building efficient, scalable, and user-centered digital solutions.",
+      "desc2": "Motivated to join a professional development team where i can contribute my technical expertise, continue growing, and collaborate on impactful projects.",
+      "desc3": "My goal is to deliver high-quality solutions that provide real value to clients through professionalism, precision, and continuous improvement."
     },
 
     "skills": {
@@ -84,7 +84,7 @@
     },
 
     "exp": {
-      "title": "Experiencia",
+      "title": "Working Experience",
       "e1": {
         "title": "Freelancer",
         "date": "Since 2017 until now",

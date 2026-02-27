@@ -1,0 +1,9 @@
+services:
+  jamesvilca:
+    build: .
+    container_name: jamesvilca
+    restart: always
+    environment:
+      NODE_ENV: production
+    ports:
+      - "127.0.0.1:3000:3002"

@@ -13,3 +13,7 @@ html {
 .ubuntu {
   font-family: var(--font-ubuntu);
 }
+
+.archivo {
+  font-family: var(--font-archivo);
+}
