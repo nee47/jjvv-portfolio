@@ -63,6 +63,10 @@ export default function Footer() {
             </svg>
             joseph_vv@hotmail.com
           </a>
+
+          <div>
+            <span className="text-green-500">Whatsapp:</span> +51 951760770
+          </div>
         </div>
 
         {/* Social links */}

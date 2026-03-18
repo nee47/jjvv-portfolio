@@ -47,13 +47,18 @@ function MyNavigation() {
            mt-8 md:visible md:w-auto ml-auto bg-yellow-200 font-bold md:bg-transparent flex flex-col md:flex-row md:mt-0 py-2 text-white justify-center gap-x-2 gap-y-6 md:gap-y-0 `}
         >
           {tabs.map((tab, index) => (
-            <li key={index}>
+            <motion.li
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              key={index}
+            >
               <a href={t(`${tab}.path`)}>
                 <div className="p-2 ml-4 md:py-1 text-sm  w-[100px] md:text-center text-black md:text-yellow-400 hover:text-orange-600 md:hover:border-b md:hover:border-b-zinc-400">
                   {t(`${tab}.label`)}
                 </div>
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </nav>

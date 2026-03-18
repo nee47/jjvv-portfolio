@@ -1,3 +1,4 @@
+"use client";
 import ReactCon from "./icons/ReactCon";
 import HtmlIcon from "./icons/HtmlIcon";
 import NodeJs from "./icons/NodeJs";
@@ -6,11 +7,18 @@ import QT from "./icons/QT";
 import CssIcon from "./icons/CssIcon";
 import Tailwind from "./icons/Tailwind";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 export default function Frameworks() {
   const t = useTranslations("Index");
   return (
-    <div className="bg-slate-600  rounded-md roboto text-white max-w-[550px]  p-4 ">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      className="bg-slate-600  rounded-md roboto text-white max-w-[550px]  p-4 "
+    >
       <h2 className="text-2xl ">{t("skills.frameworks")}</h2>
 
       <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-2 ">
@@ -55,6 +63,6 @@ export default function Frameworks() {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

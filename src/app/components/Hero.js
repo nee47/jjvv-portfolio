@@ -11,9 +11,9 @@ export default function Hero() {
     <div className="size-full flex justify-center bg-zinc-700">
       <div className="md:h-[560px]  mt-2 items-center md:py-14 md:mt-28 md:items-start flex flex-col-reverse gap-y-4 md:flex-row ">
         <motion.div
-          initial={{ x: -1300 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          initial={{ x: -300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeIn" }}
           className=" flex flex-col pb-28 flex-wrap gap-y-4  mx-[10%] md:mx-0 "
         >
           <h1 className="text-5xl max-w-[460px] break-words font-extrabold text-yellow-300">
@@ -68,9 +68,9 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeIn" }}
           className=""
         >
           <Image

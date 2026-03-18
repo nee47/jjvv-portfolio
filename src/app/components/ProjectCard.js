@@ -1,11 +1,18 @@
+"use client";
 import Image from "next/image";
 import Pill from "./Pill";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
-export default function ProjectCard({ info, tags }) {
+export default function ProjectCard({ info, tags, index }) {
   const t = useTranslations("Index");
   return (
-    <article>
+    <motion.article
+      initial={{ opacity: 0, y: 180 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.55, ease: "easeOut" }}
+    >
       <header className="mb-8 px-6 flex flex-wrap gap-x-10 items-center justify-center md:mb-36">
         <Image
           className="rounded-md mb-2 md:mb-0 flex-shrink-[2] w-[580px] hover:scale-105 transform transition-transform duration-300"
@@ -44,12 +51,12 @@ export default function ProjectCard({ info, tags }) {
           {
             <div className="flex gap-x-2 pt-6">
               {tags?.map((tag, index) => (
-                <Pill key={index} props={tag} />
+                <Pill key={index} tag={tag} />
               ))}
             </div>
           }
         </div>
       </header>
-    </article>
+    </motion.article>
   );
 }
