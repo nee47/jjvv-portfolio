@@ -8,7 +8,7 @@ export default async function Home({ params }) {
   const l = await params;
 
   return (
-    <main className="flex min-h-screen archivo bg-slate-200 flex-col items-center    ">
+    <main className="flex min-h-screen archivo bg-slate-900 flex-col items-center">
       <Hero></Hero>
       <Projects />
       <About />

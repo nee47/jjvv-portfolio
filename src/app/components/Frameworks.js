@@ -15,11 +15,11 @@ export default function Frameworks() {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      className="bg-slate-600  rounded-md roboto text-white max-w-[550px]  p-4 "
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 shadow-xl rounded-2xl w-full md:w-[600px] p-8"
     >
-      <h2 className="text-2xl ">{t("skills.frameworks")}</h2>
+      <h2 className="text-2xl font-bold text-white mb-6 tracking-tight">{t("skills.frameworks")}</h2>
 
       <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-2 ">
         {[
@@ -54,12 +54,14 @@ export default function Frameworks() {
         ].map((item, index) => (
           <div
             key={index}
-            className="relative text-center rounded-md h-20 bg-slate-800 min-w-[120px]  group p-4 "
+            className="relative flex items-center justify-center rounded-xl h-24 bg-slate-900/50 border border-slate-700/50 group p-4 hover:bg-slate-800 hover:border-purple-500/50 transition-all duration-300 shadow-inner"
           >
-            <div className="md:invisible text-sm  group-hover:visible absolute z-30 -top-4 rounded-md left-0 right-0 mx-auto bg-white  w-20 h-10 text-black">
+            <div className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:-translate-y-2 text-xs absolute z-30 -top-6 rounded-md left-0 right-0 mx-auto bg-slate-800 text-slate-200 border border-slate-600 w-max px-3 py-1 shadow-lg transition-all duration-300 pointer-events-none">
               {item.label}
             </div>
-            <item.icon className="m-auto " width="55px" height="55px" />
+            <div className="group-hover:scale-110 transition-transform duration-300 filter drop-shadow-md">
+              <item.icon width="50px" height="50px" />
+            </div>
           </div>
         ))}
       </div>

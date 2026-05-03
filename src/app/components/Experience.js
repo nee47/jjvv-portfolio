@@ -6,9 +6,12 @@ export default function Experience() {
   return (
     <div
       id={t("nav3.path").slice(1)}
-      className=" bg-zinc-600  py-32 px-[5%]  w-full"
+      className="bg-slate-900/50 py-32 px-[5%] w-full relative z-10 border-t border-slate-800"
     >
-      <h1 className="text-5xl font-bold text-yellow-200">{t("exp.title")}</h1>
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-20 text-center">
+          {t("exp.title")}
+        </h2>
 
       {[
         {
@@ -25,33 +28,43 @@ export default function Experience() {
           pic: "/seller.webp",
         },
       ].map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col lg:flex-row gap-y-8 lg:items-center gap-x-16 mt-16 text-white transition-all ease-in rounded-md "
-        >
-          <Image
-            src={item.pic}
-            height={500}
-            width={500}
-            alt="job image"
-            className="bg-slate-200 rounded-lg"
-          ></Image>
-          <div>
-            <h3 className="text-3xl font-bold mb-4  text-black bg-yellow-200 w-fit p-4">
-              {item.title}
-            </h3>
-            <p className="text-slate-300 text-sm">{item.date}</p>
-            {item.desc.map((d, index) => (
-              <p
-                key={index}
-                className="mb-2 bg-zinc-800 p-4 rounded-md  hover:border-b-yellow-400"
-              >
-                {d}
-              </p>
-            ))}
+        item && (
+          <div
+            key={index}
+            className="flex flex-col lg:flex-row gap-y-8 lg:items-center gap-x-16 mb-24 text-white transition-all ease-in group"
+          >
+            <div className="relative overflow-hidden rounded-2xl w-full lg:w-1/2 shadow-2xl border border-slate-700/50">
+              <div className="absolute inset-0 bg-purple-500/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
+              <Image
+                src={item.pic}
+                height={500}
+                width={700}
+                alt="job image"
+                className="w-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="w-full lg:w-1/2">
+              <div className="inline-block px-4 py-2 mb-6 rounded-lg bg-slate-800 border border-slate-700 shadow-md">
+                <h3 className="text-2xl font-bold text-white">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-purple-400 font-medium mb-6 uppercase tracking-wider text-sm">{item.date}</p>
+              <div className="space-y-4">
+                {item.desc.map((d, idx) => (
+                  <p
+                    key={idx}
+                    className="text-slate-300 leading-relaxed bg-slate-800/30 p-5 rounded-xl border border-slate-700/30 hover:border-slate-600 transition-colors"
+                  >
+                    {d}
+                  </p>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        )
       ))}
+      </div>
     </div>
   );
 }

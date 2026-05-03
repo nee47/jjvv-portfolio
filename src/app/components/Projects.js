@@ -95,11 +95,16 @@ export default function Projects() {
 
   return (
     <section
-      className=" flex flex-col w-full items-center justify-center pt-44  "
+      className="flex flex-col w-full items-center justify-center pt-44 relative z-20"
       id={t("nav1.path").slice(1)}
     >
-      <h2 className="text-black text-5xl font-bold">{t("pro")}</h2>
-      <div className="mt-20">
+      <div className="inline-block px-4 py-1.5 mb-4 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
+        <span className="text-sm font-medium text-purple-300 uppercase tracking-wider">Portfolio</span>
+      </div>
+      <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400 mb-20 text-center">
+        {t("pro")}
+      </h2>
+      <div className="w-full max-w-6xl px-6 flex flex-col gap-y-32">
         {PROJECTS.map(
           (p, index) =>
             p && (

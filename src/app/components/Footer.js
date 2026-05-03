@@ -35,17 +35,17 @@ export default function Footer() {
   return (
     <footer
       id={footerId}
-      className="relative w-full bg-zinc-900 text-zinc-300 border-t border-zinc-800"
+      className="relative w-full bg-slate-900 text-slate-400 border-t border-slate-800"
     >
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
         {/* Contact CTA */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-6 tracking-tight">
             {t("contact")}
           </h2>
           <a
             href="mailto:joseph_vv@hotmail.com"
-            className="inline-flex items-center gap-2 text-lg text-amber-400 hover:text-amber-300 transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-lg text-purple-400 hover:text-purple-300 transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +64,8 @@ export default function Footer() {
             joseph_vv@hotmail.com
           </a>
 
-          <div>
-            <span className="text-green-500">Whatsapp:</span> +51 951760770
+          <div className="mt-4">
+            <span className="text-blue-400 font-semibold tracking-wide">Whatsapp:</span> +51 951760770
           </div>
         </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
             href="https://github.com/nee47"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-lg bg-zinc-800/80 text-zinc-400 hover:bg-zinc-700 hover:text-white transition-all duration-200 hover:scale-105"
+            className="p-3 rounded-xl bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:scale-110 shadow-lg"
             aria-label="GitHub"
           >
             {GITHUB_SVG}
@@ -84,15 +84,14 @@ export default function Footer() {
             href="https://www.linkedin.com/in/james-joseph-vilca-vargas-70a795305"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-lg bg-zinc-800/80 text-zinc-400 hover:bg-zinc-700 hover:text-white transition-all duration-200 hover:scale-105"
+            className="p-3 rounded-xl bg-slate-800 text-slate-400 hover:bg-[#0077b5] hover:text-white border border-slate-700 hover:border-[#0077b5] transition-all duration-300 hover:scale-110 shadow-lg"
             aria-label="LinkedIn"
           >
             {LINKEDIN_SVG}
           </a>
         </div>
 
-        {/* Copyright */}
-        <div className="pt-8 border-t border-zinc-800 text-center text-sm text-zinc-500">
+        <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
           © {new Date().getFullYear()} James Vilca. All rights reserved.
         </div>
       </div>

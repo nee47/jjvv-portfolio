@@ -1,47 +1,71 @@
 "use client";
 import Image from "next/image";
-import joseph from "@/public/foto-de-perfil.webp";
+import joseph from "@/public/james_vilca.webp";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function Hero() {
   const t = useTranslations("Index");
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <div className="size-full flex justify-center bg-zinc-700">
-      <div className="md:h-[560px]  mt-2 items-center md:py-14 md:mt-28 md:items-start flex flex-col-reverse gap-y-4 md:flex-row ">
+    <div
+      ref={ref}
+      className="relative size-full flex justify-center bg-slate-900 overflow-hidden pt-20 pb-32"
+    >
+      {/* Background ambient glow */}
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-purple-600/20 blur-[120px]" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/20 blur-[120px]" />
+
+      <motion.div
+        style={{ y: yText, opacity }}
+        className="relative z-10 w-full max-w-6xl mx-auto px-6 md:h-[560px] flex flex-col-reverse gap-y-10 md:flex-row items-center justify-between"
+      >
         <motion.div
-          initial={{ x: -300, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.4, ease: "easeIn" }}
-          className=" flex flex-col pb-28 flex-wrap gap-y-4  mx-[10%] md:mx-0 "
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col flex-wrap gap-y-6 max-w-xl"
         >
-          <h1 className="text-5xl max-w-[460px] break-words font-extrabold text-yellow-300">
-            FULL STACK DEVELOPER
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white">
+            FULL STACK{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+              DEVELOPER
+            </span>
           </h1>
-          <p className=" roboto text-white md:max-w-sm ">
+
+          <p className="roboto text-lg text-slate-400 leading-relaxed max-w-md">
             {t.rich("heroDesc", {
               important: (chunks) => (
-                <span className="font-bold text-black bg-zinc-300 px-2 ">
-                  {chunks}
-                </span>
+                <span className="font-semibold text-white">{chunks}</span>
               ),
               important2: (chunks) => (
-                <span className="text-red-400 font-bold">{chunks}</span>
+                <span className="text-blue-400 font-semibold">{chunks}</span>
               ),
             })}
           </p>
 
-          <div className="flex gap-x-3 ">
+          <div className="flex gap-x-4 mt-4">
             <a
               target="_blank"
               href="https://github.com/nee47"
-              className=" hover:scale-125  transition ease-in hover:bg-purple-500 rounded-md"
+              className="flex items-center justify-center size-12 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 hover:border-slate-600 hover:scale-105 transition-all duration-300 shadow-lg"
+              aria-label="GitHub Profile"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -52,12 +76,13 @@ export default function Hero() {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/james-joseph-vilca-vargas-70a795305"
-              className="transition ease-in hover:scale-125  hover:bg-blue-500 rounded-md"
+              className="flex items-center justify-center size-12 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-[#0077b5] hover:border-[#0077b5] hover:scale-105 transition-all duration-300 shadow-lg"
+              aria-label="LinkedIn Profile"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -68,19 +93,21 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
+          initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.4, ease: "easeIn" }}
-          className=""
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          style={{ y: yBg }}
+          className="relative"
         >
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 blur-3xl opacity-30 animate-pulse" />
           <Image
-            className="size-[250px] bg-zinc-600 rounded-full object-cover outline outline-3 outline-yellow-400"
+            className="relative size-[250px] md:size-[360px] bg-slate-800 rounded-full object-cover border border-slate-700 shadow-[0_0_40px_rgba(0,0,0,0.5)] transition-transform duration-500 hover:scale-[1.02]"
             src={joseph}
             alt="Joseph Vilca"
-            loading="eager"
+            priority
           />
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }

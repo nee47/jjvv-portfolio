@@ -36,15 +36,18 @@ function MyNavigation() {
   return (
     <header className="archivo">
       <nav className="visible md:invisible max-w-screen-md mx-auto absolute top-0 z-40 md:top-10 left-0 right-0">
-        <button onClick={toggle} className=" fixed z-50 right-2 p-2 text-2xl">
+        <button
+          onClick={toggle}
+          className=" fixed z-50 right-2 p-2 text-2xl text-purple-200"
+        >
           ☰
         </button>
 
         <ul
           className={` ${
             clicked ? " right-8" : "-right-[50%]"
-          }  transition-[right] z-40 ease-in duration-200 w-[50%] fixed md:static 
-           mt-8 md:visible md:w-auto ml-auto bg-yellow-200 font-bold md:bg-transparent flex flex-col md:flex-row md:mt-0 py-2 text-white justify-center gap-x-2 gap-y-6 md:gap-y-0 `}
+          }  transition-[right] z-40 ease-in duration-300 w-[50%] fixed md:static 
+           mt-8 md:visible md:w-auto ml-auto bg-slate-800/90 backdrop-blur-md rounded-2xl md:bg-transparent flex flex-col md:flex-row md:mt-0 py-4 md:py-2 text-white justify-center gap-x-2 gap-y-6 md:gap-y-0 shadow-2xl md:shadow-none border border-slate-700/50 md:border-none`}
         >
           {tabs.map((tab, index) => (
             <motion.li
@@ -54,7 +57,7 @@ function MyNavigation() {
               key={index}
             >
               <a href={t(`${tab}.path`)}>
-                <div className="p-2 ml-4 md:py-1 text-sm  w-[100px] md:text-center text-black md:text-yellow-400 hover:text-orange-600 md:hover:border-b md:hover:border-b-zinc-400">
+                <div className="p-2 ml-4 md:py-1.5 px-4 text-sm w-fit md:text-center text-slate-300 hover:text-purple-400 transition-colors font-medium rounded-lg hover:bg-slate-800/50">
                   {t(`${tab}.label`)}
                 </div>
               </a>
@@ -63,13 +66,13 @@ function MyNavigation() {
         </ul>
       </nav>
 
-      <div id="langs" className="bg-zinc-700 relative">
-        <div className="flex justify-start p-10">
+      <div id="langs" className="absolute top-0 z-40">
+        <div className="flex justify-start ">
           <div className="relative" ref={langRef}>
             <motion.button
               type="button"
               onClick={toggleLang}
-              className="flex items-center gap-2 px-4 py-2 text-white rounded-lg hover:bg-zinc-600 transition-colors min-w-[4rem]"
+              className="flex items-center gap-2 px-4 py-2 text-slate-300 rounded-lg hover:bg-slate-800 hover:text-white border border-transparent hover:border-slate-700 transition-all min-w-[4rem]"
               whileTap={{ scale: 0.97 }}
               aria-expanded={langOpen}
               aria-haspopup="listbox"
@@ -101,17 +104,17 @@ function MyNavigation() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: -8, scale: 0.96 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="absolute left-0 top-full mt-1 py-1 min-w-[4rem] bg-zinc-600 rounded-lg shadow-lg overflow-hidden z-50"
+                  className="absolute left-0 top-full mt-2 py-1.5 min-w-[5rem] bg-slate-800/95 backdrop-blur-md rounded-xl shadow-xl border border-slate-700/50 overflow-hidden z-50"
                 >
                   {languages.map(({ code, label }) => (
                     <Link
                       key={code}
                       href={`/${code}`}
                       onClick={() => setLangOpen(false)}
-                      className={`block px-4 py-2 text-sm transition-colors ${
+                      className={`block px-5 py-2.5 text-sm transition-colors ${
                         locale === code
-                          ? "bg-zinc-500 text-white font-medium"
-                          : "text-zinc-200 hover:bg-zinc-500 hover:text-white"
+                          ? "bg-purple-500/20 text-purple-400 font-bold"
+                          : "text-slate-300 hover:bg-slate-700/80 hover:text-white"
                       }`}
                     >
                       {label}
