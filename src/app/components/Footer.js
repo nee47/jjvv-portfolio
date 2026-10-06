@@ -92,7 +92,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} James Vilca. All rights reserved.
+          <p>
+            © {new Date().getFullYear()} JAMES JOSEPH VILCA VARGAS. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
